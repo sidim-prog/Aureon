@@ -68,7 +68,7 @@ export function SellersClient({ sellers }: { sellers: SellerVM[] }) {
                     <div className="flex flex-1 flex-col p-6">
                       {/* Logo */}
                       <div className="mb-4 flex items-start justify-between">
-                        <div className="-mt-12 flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl gradient-brand text-2xl font-bold text-white shadow-lg ring-4 ring-midnight-50">
+                        <div className="relative z-10 -mt-12 flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl gradient-brand text-2xl font-bold text-white shadow-lg ring-4 ring-midnight-50">
                           {seller.logoUrl ? (
                             /* eslint-disable-next-line @next/next/no-img-element */
                             <img src={seller.logoUrl} alt={seller.businessName} className="h-full w-full object-cover" />

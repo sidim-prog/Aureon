@@ -49,7 +49,7 @@ export function SellerProfile({
           transition={{ duration: 0.5, ease: EASE }}
           className="mb-10 flex flex-wrap items-start gap-6"
         >
-          <div className="-mt-12 flex h-24 w-24 shrink-0 items-center justify-center overflow-hidden rounded-3xl gradient-brand text-4xl font-bold text-white shadow-lg ring-4 ring-midnight">
+          <div className="relative z-10 -mt-12 flex h-24 w-24 shrink-0 items-center justify-center overflow-hidden rounded-3xl gradient-brand text-4xl font-bold text-white shadow-lg ring-4 ring-midnight">
             {seller.logoUrl ? (
               /* eslint-disable-next-line @next/next/no-img-element */
               <img src={seller.logoUrl} alt={seller.businessName} className="h-full w-full object-cover" />
